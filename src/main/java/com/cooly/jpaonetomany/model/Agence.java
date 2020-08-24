@@ -20,7 +20,7 @@ import java.io.Serializable;
 
     @ManyToOne
     @JoinColumn(name = "banque_id", nullable = false)
-    @JsonBackReference
+
     private Banque Banque;
 
     public Banque getBanque() {

@@ -23,6 +23,8 @@ public class BanqueController implements Serializable
   public Page<Banque> getAllBanques(Pageable pageable){
     return BanqueRepository.findAll(pageable);
   }
+
+
   @PostMapping("/banque")
   public Banque postBanque(@RequestBody Banque Banque){
     return BanqueRepository.save(Banque);
